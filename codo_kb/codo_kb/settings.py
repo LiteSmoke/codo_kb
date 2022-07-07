@@ -83,26 +83,26 @@ WSGI_APPLICATION = 'codo_kb.wsgi.application'
 # }
 
 #  LOCAL MYSQL DB
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'codo_kb',
-        'USER': 'root',
-        'PASSWORD': 'admin',
-        'HOST': 'localhost'
-    }
-}
-
-# REG.RU MYSQL DB
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'u1593565_default',
-#         'USER': 'u1593565_default',
-#         'PASSWORD': '5Txc6r0GT3naU0Ou',
+#         'NAME': 'codo_kb',
+#         'USER': 'root',
+#         'PASSWORD': 'admin',
 #         'HOST': 'localhost'
 #     }
 # }
+
+# REG.RU MYSQL DB
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'u1593565_default',
+        'USER': 'u1593565_default',
+        'PASSWORD': '5Txc6r0GT3naU0Ou',
+        'HOST': 'localhost'
+    }
+}
 
 
 
