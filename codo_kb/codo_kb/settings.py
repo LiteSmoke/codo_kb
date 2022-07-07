@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-7-i0mx)&(g@0+gtl#x!ix)yx@3m2w5ofd1y-!^az-1_kq^2&68
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','localhost','gtingo.com','www.gtingo.com']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'kb'
+
 ]
 
 MIDDLEWARE = [
@@ -73,12 +75,35 @@ WSGI_APPLICATION = 'codo_kb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+#  LOCAL MYSQL DB
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'codo_kb',
+        'USER': 'root',
+        'PASSWORD': 'admin',
+        'HOST': 'localhost'
     }
 }
+
+# REG.RU MYSQL DB
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'u1593565_default',
+#         'USER': 'u1593565_default',
+#         'PASSWORD': '5Txc6r0GT3naU0Ou',
+#         'HOST': 'localhost'
+#     }
+# }
+
 
 
 # Password validation
