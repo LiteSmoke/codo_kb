@@ -23,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7-i0mx)&(g@0+gtl#x!ix)yx@3m2w5ofd1y-!^az-1_kq^2&68'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+# DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','localhost','gtingo.com','www.gtingo.com']
 
@@ -83,26 +84,26 @@ WSGI_APPLICATION = 'codo_kb.wsgi.application'
 # }
 
 #  LOCAL MYSQL DB
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'codo_kb',
-#         'USER': 'root',
-#         'PASSWORD': 'admin',
-#         'HOST': 'localhost'
-#     }
-# }
-
-# REG.RU MYSQL DB
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'u1593565_default',
-        'USER': 'u1593565_default',
+        'NAME': 'codo_kb',
+        'USER': 'db_user',
         'PASSWORD': '5Txc6r0GT3naU0Ou',
         'HOST': 'localhost'
     }
 }
+
+# # REG.RU MYSQL DB
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'u1593565_default',
+#         'USER': 'u1593565_default',
+#         'PASSWORD': '5Txc6r0GT3naU0Ou',
+#         'HOST': 'localhost'
+#     }
+# }
 
 
 
@@ -140,8 +141,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = 'static/'
+STATIC_URL =    'static/'
+STATIC_ROOT =   'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
