@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-7-i0mx)&(g@0+gtl#x!ix)yx@3m2w5ofd1y-!^az-1_kq^2&68
 # DEBUG = False
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','gtingo.com','www.gtingo.com']
+ALLOWED_HOSTS = ['gtingo.com','www.gtingo.com']
 
 # Application definition
 
@@ -74,24 +74,6 @@ WSGI_APPLICATION = 'codo_kb.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-#  LOCAL MYSQL DB
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'codo_kb',
-#         'USER': 'db_user',
-#         'PASSWORD': '5Txc6r0GT3naU0Ou',
-#         'HOST': 'localhost'
-#     }
-# }
 
 # # REG.RU MYSQL DB
 DATABASES = {
@@ -140,10 +122,6 @@ USE_TZ = True
 STATIC_ROOT =   os.path.join(BASE_DIR, 'static')
 # STATIC_ROOT = '/var/www/u1593565/data/www/gtingo.com/static/'
 STATIC_URL =    'static/'
-# STATICFILES_DIRS = [
-#     BASE_DIR / "static",
-#     BASE_DIR / "static/admin/" ,
-# ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
