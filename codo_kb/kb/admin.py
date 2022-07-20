@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Video, Tag, TagType
+from .models import Video, Tag, TagType, UserAdmin
+from django.contrib.auth.models import User
 
 # Register your models here.
 
@@ -11,3 +12,6 @@ from .models import Video, Tag, TagType
 admin.site.register(Video)
 admin.site.register(Tag)
 admin.site.register(TagType)
+
+admin.site.unregister(User)
+admin.site.register(User, UserAdmin)
